@@ -12,6 +12,16 @@ Para executar o projeto, você precisará do seguinte:
 1. **Java Development Kit (JDK):** O JDK é necessário para compilar e executar o código Java. Certifique-se de ter o JDK instalado em sua máquina.
 
 2. **Banco de Dados PostgreSQL:** O projeto utiliza um banco de dados PostgreSQL para armazenar os contatos. Você pode ter um banco de dados PostgreSQL instalado localmente ou em um servidor remoto.
+   
+3. **Criação da Tabela Contatos:** O projeto utiliza uma tabela chamada contatos em um banco de dados chamado Agenda no PostgreSQL. Caso seu banco de dados tenha outro nome, é necessário modificar o projeto tanto na classe `Menu` quanto nas Strings utilizadas para os comandos SQL. A criação da table contatos para neste projeto usou o seguinte comando:
+
+```
+CREATE TABLE contatos (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    telefone VARCHAR(20) NOT NULL
+);
+```
 
 ## Configuração
 
