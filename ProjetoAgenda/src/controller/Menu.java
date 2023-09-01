@@ -75,10 +75,12 @@ public abstract class Menu {
 			
 						    default:
 						    	System.out.println("Agenda fechada.");
-						    	opcao = 2;
 						    	break;
-						    	
 						    }
+							if (opcao == 6) {
+								opcao = 2;
+							    break; 
+							}
 						}
 					
 				} catch(PSQLException e) { 
